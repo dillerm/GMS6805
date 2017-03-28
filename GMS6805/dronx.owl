@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="&obo;dronx/"
+     xml:base="&obo;dronx/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="&obo;dronx/">
+        <dc:contributor>Caitrin McDonough Rowe</dc:contributor>
+        <dc:contributor>Matthew Diller</dc:contributor>
+        <owl:versionInfo>2017-03-22</owl:versionInfo>
+        <rdfs:comment xml:lang="en">This ontology is an extension of the dron-lite.owl module from the Drug Ontology. It includes additional classes and DL axioms for several classes of anti-hypertensive drugs and their mechanisms of action.</rdfs:comment>
+        <owl:imports rdf:resource="&obo;dron/dron-lite.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DRON_00005000 -->
+
+    <owl:Class rdf:about="&obo;DRON_00005000">
+        <rdfs:label xml:lang="en">function-inhibiting alpha-1-adrenergic receptor binding disposition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000016"/>
+        <obo:IAO_0000117>Caitrin McDonough Rowe</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">A disposition of a molecule to bind to an instance of an alpha-1-adrenergic receptor in a manner that inhibits the realization of a function of the receptor instance.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">Goodman and Gilman&apos;s The Pharmacological Basis of Therapeutics, 12th Edition. Section II. Chapter 12 - Adrenergic Agonists and Antagonists.</obo:IAO_0000119>
+        <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">alpha-1-adrenergic receptor antagonist</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DRON_00005001 -->
+
+    <owl:Class rdf:about="&obo;DRON_00005001">
+        <rdfs:label xml:lang="en">function-inhibiting epithelial sodium channel binding disposition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000016"/>
+        <obo:IAO_0000115 xml:lang="en">A disposition of a molecule to bind to an instance of an epithelial sodium channel in a manner that inhibits the realization of a function of the sodium channel instance.</obo:IAO_0000115>
+        <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
+        <obo:IAO_0000117>Caitrin McDonough Rowe</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Goodman and Gilman&apos;s The Pharmacological Basis of Therapeutics, 12th Edition. Section III. Chapter 25 - Antagonists of Mineralocorticoid Receptors (Aldosterone Antagonists, Potassium-Sparing Diuretics).</obo:IAO_0000119>
+        <obo:IAO_0000118 xml:lang="en">function-inhibiting amiloride-sensitive sodium channel binding disposition</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">potassium-sparing disposition</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DRON_00005002 -->
+
+    <owl:Class rdf:about="&obo;DRON_00005002">
+        <rdfs:label xml:lang="en">function-inhibiting mineralocorticoid receptor binding disposition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000016"/>
+        <obo:IAO_0000117>Caitrin McDonough Rowe</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">A disposition of a molecule to bind to an instance of a mineralocorticoid receptor in a manner that competitively inhibits the binding of an instance of aldosterone.</obo:IAO_0000115>
+        <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Goodman and Gilman&apos;s The Pharmacological Basis of Therapeutics, 12th Edition. Section III. Chapter 25 - Antagonists of Mineralocorticoid Receptors (Aldosterone Antagonists, Potassium-Sparing Diuretics).</obo:IAO_0000119>
+        <obo:IAO_0000118 xml:lang="en">aldosterone antagonist</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">function-competitive inhibition of mineralocorticoid receptor binding disposition</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DRON_00005003 -->
+
+    <owl:Class rdf:about="&obo;DRON_00005003">
+        <rdfs:label xml:lang="en">function-inhibiting renin catalytic activity disposition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000016"/>
+        <obo:IAO_0000117>Caitrin McDonough Rowe</obo:IAO_0000117>
+        <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">A disposition of a molecule to directly and competitively inhibit the catalytic activity of an instance of renin in a manner that leads to diminished production of AngI (angiotensin I).</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">Goodman and Gilman&apos;s The Pharmacological Basis of Therapeutics, 12th Edition. Section III. Chapter 27 - Direct Renin Inhibitors</obo:IAO_0000119>
+        <obo:IAO_0000118 xml:lang="en">direct renin inhibitor</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">function-direct and competitive inhibition of renin activity</obo:IAO_0000118>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+
