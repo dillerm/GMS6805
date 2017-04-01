@@ -40,6 +40,84 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_2639 -->
+
+    <rdf:Description rdf:about="&obo;CHEBI_2639">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                <owl:someValuesFrom rdf:resource="&obo;DRON_00005001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_31547 -->
+
+    <rdf:Description rdf:about="&obo;CHEBI_31547">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                <owl:someValuesFrom rdf:resource="&obo;DRON_00005002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_4708 -->
+
+    <rdf:Description rdf:about="&obo;CHEBI_4708">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                <owl:someValuesFrom rdf:resource="&obo;DRON_00005000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_8364 -->
+
+    <rdf:Description rdf:about="&obo;CHEBI_8364">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                <owl:someValuesFrom rdf:resource="&obo;DRON_00005000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_9241 -->
+
+    <rdf:Description rdf:about="&obo;CHEBI_9241">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                <owl:someValuesFrom rdf:resource="&obo;DRON_00005002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_9445 -->
+
+    <rdf:Description rdf:about="&obo;CHEBI_9445">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                <owl:someValuesFrom rdf:resource="&obo;DRON_00005000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/DRON_00005000 -->
 
     <owl:Class rdf:about="&obo;DRON_00005000">
@@ -96,6 +174,71 @@
         <obo:IAO_0000118 xml:lang="en">direct renin inhibitor</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">function-direct and competitive inhibition of renin activity</obo:IAO_0000118>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DRON_00010909 -->
+
+    <rdf:Description rdf:about="&obo;DRON_00010909">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                <owl:someValuesFrom rdf:resource="&obo;DRON_00005000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DRON_00015545 -->
+
+    <rdf:Description rdf:about="&obo;DRON_00015545">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                <owl:someValuesFrom rdf:resource="&obo;DRON_00005000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DRON_00015550 -->
+
+    <rdf:Description rdf:about="&obo;DRON_00015550">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                <owl:someValuesFrom rdf:resource="&obo;DRON_00005000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DRON_00016077 -->
+
+    <rdf:Description rdf:about="&obo;DRON_00016077">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                <owl:someValuesFrom rdf:resource="&obo;DRON_00005001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DRON_00020021 -->
+
+    <rdf:Description rdf:about="&obo;DRON_00020021">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                <owl:someValuesFrom rdf:resource="&obo;DRON_00005003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
 </rdf:RDF>
 
 
