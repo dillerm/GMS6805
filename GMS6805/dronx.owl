@@ -234,6 +234,62 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/dronx/DRONx00005000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/dronx/DRONx00005000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <obo:IAO_0000115 xml:lang="en">A disposition of a molecule to bind to an instance of an alpha-2-adrenergice receptor in a manner that activates the receptor</obo:IAO_0000115>
+        <obo:IAO_0000117>Caitrin McDonough Rowe</obo:IAO_0000117>
+        <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">alpha-2-adrenergeic agonists</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en">Goodman &amp; Gilman’s The Pharmacological Basis of Therapeutics, 12th Edition, Chapter 12, Alpha1-Selective Adrenergic Receptor Agonists</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">function-activating alpha-2-adrenergic receptor disposition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dronx/DRONx00005001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/dronx/DRONx00005001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <obo:IAO_0000115 xml:lang="en">A disposition of a molecule to bind to an instance of an adenosine triphosphate-modulated potassium (ATP-modulated K+) channel in a manner that opens the channel and permits potassium efflux</obo:IAO_0000115>
+        <obo:IAO_0000117>Caitrin McDonough Rowe</obo:IAO_0000117>
+        <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">adenosine triphosphate-modulate potassium channel activator</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en">Goodman &amp; Gilman’s The Pharmacological Basis of Therapeutics, 12th Edition, Chapter 27, Vasodilators</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">function-activating adenosine triphosphate-modulated potassium (ATP-modulated K+) channel disposition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dronx/DRONx00005002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/dronx/DRONx00005002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <obo:IAO_0000115 xml:lang="en">A disposition of a molecule to bind to an instance of a vesicular catecholamine transporter in a manner that inhibits the transporter activity</obo:IAO_0000115>
+        <obo:IAO_0000117>Caitrin McDonough Rowe</obo:IAO_0000117>
+        <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">Vesicular catecholamine transporter inhibitor</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en">Goodman &amp; Gilman’s The Pharmacological Basis of Therapeutics, 12th Edition, Chapter 27, Combined Alpha-1 and Beta Adrenergic Receptor Antagonists</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">function-inhibiting vesicular catecholamine transporter activity disposition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dronx/DRONx00005003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/dronx/DRONx00005003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <obo:IAO_0000115 xml:lang="en">A disposition of a molecule to bind to an instance of an imidazoline receptor subtype 1 (I1) in a manner that activates the receptor</obo:IAO_0000115>
+        <obo:IAO_0000117>Caitrin McDonough Rowe</obo:IAO_0000117>
+        <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">Imidazoline receptor subtype 1 agonist</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en">PubMed ID: 9050981 (Ernsberger P et al. The I1-imidazoline receptor: from binding to therapeutic target in cardiovascular disease. J Hypertens Suppl. 1997 Jan;15(1): S9-S23.)</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">function-activating imidazoline receptor subtype 1 disposition</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -254,8 +310,8 @@
         <obo:IAO_0000117>Caitrin McDonough Rowe</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">Goodman &amp; Gilman’s The Pharmacological Basis of Therapeutics, 12th Edition, Chapter 27, Section Sympatholythic Agents</obo:IAO_0000119>
         <obo:IAO_0000118 xml:lang="en">beta-adrenergic receptor blocker</obo:IAO_0000118>
-        <obo:IAO_0000115 xml:lang="en">A disposition of a molecule to bind to an instance of a beta-adrenergic receptor in a manner that blocks sympathetic stimulation mediated by beta-adrenergic receptors in the heart and vascular smooth muscle</obo:IAO_0000115>
         <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">A disposition of a molecule to bind to an instance of a beta-adrenergic receptor in a manner that blocks sympathetic stimulation mediated by beta-adrenergic receptors in the heart and vascular smooth muscle</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/DRON_00724207">
         <obo:IAO_0000115 xml:lang="en">A disposition of a molecule to bind to an instance of an angiotensin subtype 1 (AT1) receptor in a manner that blocks the biological effects of angiotensin II (AngII)</obo:IAO_0000115>
