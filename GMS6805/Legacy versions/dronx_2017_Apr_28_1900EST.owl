@@ -1,0 +1,692 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
+    <!ENTITY protege "http://protege.stanford.edu/plugins/owl/protege#" >
+]>
+
+
+<rdf:RDF xmlns="&obo;dronx/"
+     xml:base="&obo;dronx/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="&obo;dronx/">
+        <dc:contributor>Caitrin McDonough Rowe</dc:contributor>
+        <dc:contributor>Matthew Diller</dc:contributor>
+        <owl:versionInfo>2017-03-22</owl:versionInfo>
+        <rdfs:comment xml:lang="en">This ontology is an extension of the dron-lite.owl module from the Drug Ontology. It includes additional classes and DL axioms for several classes of anti-hypertensive drugs and their mechanisms of action.</rdfs:comment>
+        <owl:imports rdf:resource="&obo;dron/dron-lite.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000053 -->
+
+    <rdf:Description rdf:about="&obo;BFO_0000053">
+        <owl:inverseOf rdf:resource="&obo;RO_0000052"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000052 -->
+
+    <rdf:Description rdf:about="&obo;RO_0000052"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_2639 -->
+
+    <rdf:Description rdf:about="&obo;CHEBI_2639">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                        <owl:someValuesFrom rdf:resource="&obo;DRON_00005001"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                        <owl:onClass rdf:resource="&obo;DRON_00005008"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_31547 -->
+
+    <rdf:Description rdf:about="&obo;CHEBI_31547">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                        <owl:someValuesFrom rdf:resource="&obo;DRON_00005002"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                        <owl:onClass rdf:resource="&obo;DRON_00005008"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_46631 -->
+
+    <rdf:Description rdf:about="&obo;CHEBI_46631">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                        <owl:someValuesFrom rdf:resource="&obo;dronx/DRON_00005004"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                        <owl:onClass rdf:resource="&obo;DRON_00005008"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_4708 -->
+
+    <rdf:Description rdf:about="&obo;CHEBI_4708">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                        <owl:someValuesFrom rdf:resource="&obo;DRON_00005000"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                        <owl:onClass rdf:resource="&obo;DRON_00005008"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_61058 -->
+
+    <rdf:Description rdf:about="&obo;CHEBI_61058">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                        <owl:someValuesFrom rdf:resource="&obo;dronx/DRON_00005004"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                        <owl:onClass rdf:resource="&obo;DRON_00005008"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_6942 -->
+
+    <rdf:Description rdf:about="&obo;CHEBI_6942">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                        <owl:someValuesFrom rdf:resource="&obo;dronx/DRON_00005005"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                        <owl:onClass rdf:resource="&obo;DRON_00005008"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_8364 -->
+
+    <rdf:Description rdf:about="&obo;CHEBI_8364">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                        <owl:someValuesFrom rdf:resource="&obo;DRON_00005000"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                        <owl:someValuesFrom rdf:resource="&obo;DRON_00005008"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_9241 -->
+
+    <rdf:Description rdf:about="&obo;CHEBI_9241">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                        <owl:someValuesFrom rdf:resource="&obo;DRON_00005002"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                        <owl:onClass rdf:resource="&obo;DRON_00005008"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_9445 -->
+
+    <rdf:Description rdf:about="&obo;CHEBI_9445">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                        <owl:someValuesFrom rdf:resource="&obo;DRON_00005000"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                        <owl:someValuesFrom rdf:resource="&obo;DRON_00005008"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DRON_00005000 -->
+
+    <owl:Class rdf:about="&obo;DRON_00005000">
+        <rdfs:label xml:lang="en">anti-hypertensive function-inhibiting alpha-1-adrenergic receptor binding disposition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;DRON_00005008"/>
+        <obo:IAO_0000117>Caitrin McDonough Rowe</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">A function-altering anti-hypertensive disposition of a molecule to bind to an instance of an alpha-1-adrenergic receptor in a manner that inhibits the realization of a function of the receptor instance.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">Goodman and Gilman&apos;s The Pharmacological Basis of Therapeutics, 12th Edition. Section II. Chapter 12 - Adrenergic Agonists and Antagonists.</obo:IAO_0000119>
+        <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">alpha-1-adrenergic receptor antagonist</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DRON_00005001 -->
+
+    <owl:Class rdf:about="&obo;DRON_00005001">
+        <rdfs:label xml:lang="en">anti-hypertensive function-inhibiting epithelial sodium channel binding anti-hypertensive disposition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;DRON_00005008"/>
+        <obo:IAO_0000115 xml:lang="en">A function-altering anti-hypertensive disposition of a molecule to bind to an instance of an epithelial sodium channel in a manner that inhibits the realization of a function of the sodium channel instance.</obo:IAO_0000115>
+        <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
+        <obo:IAO_0000117>Caitrin McDonough Rowe</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Goodman and Gilman&apos;s The Pharmacological Basis of Therapeutics, 12th Edition. Section III. Chapter 25 - Antagonists of Mineralocorticoid Receptors (Aldosterone Antagonists, Potassium-Sparing Diuretics).</obo:IAO_0000119>
+        <obo:IAO_0000118 xml:lang="en">function-inhibiting amiloride-sensitive sodium channel binding disposition</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">potassium-sparing disposition</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DRON_00005002 -->
+
+    <owl:Class rdf:about="&obo;DRON_00005002">
+        <rdfs:label xml:lang="en">anti-hypertensive function-inhibiting mineralocorticoid receptor binding disposition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;DRON_00005008"/>
+        <obo:IAO_0000117>Caitrin McDonough Rowe</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">A function-altering anti-hypertensive disposition of a molecule to bind to an instance of a mineralocorticoid receptor in a manner that competitively inhibits the binding of an instance of aldosterone.</obo:IAO_0000115>
+        <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Goodman and Gilman&apos;s The Pharmacological Basis of Therapeutics, 12th Edition. Section III. Chapter 25 - Antagonists of Mineralocorticoid Receptors (Aldosterone Antagonists, Potassium-Sparing Diuretics).</obo:IAO_0000119>
+        <obo:IAO_0000118 xml:lang="en">aldosterone antagonist</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">function-competitive inhibition of mineralocorticoid receptor binding disposition</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DRON_00005003 -->
+
+    <owl:Class rdf:about="&obo;DRON_00005003">
+        <rdfs:label xml:lang="en">anti-hypertensive function-inhibiting renin catalytic activity disposition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;DRON_00005008"/>
+        <obo:IAO_0000117>Caitrin McDonough Rowe</obo:IAO_0000117>
+        <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">A function-altering anti-hypertensive disposition of a molecule to directly and competitively inhibit the catalytic activity of an instance of renin in a manner that leads to diminished production of AngI (angiotensin I).</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">Goodman and Gilman&apos;s The Pharmacological Basis of Therapeutics, 12th Edition. Section III. Chapter 27 - Direct Renin Inhibitors</obo:IAO_0000119>
+        <obo:IAO_0000118 xml:lang="en">direct renin inhibitor</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">function-direct and competitive inhibition of renin activity</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DRON_00005008 -->
+
+    <owl:Class rdf:about="&obo;DRON_00005008">
+        <rdfs:label xml:lang="en">function-altering anti-hypertensive disposition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000016"/>
+        <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
+        <obo:IAO_0000117>Caitrin McDonough Rowe</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">A disposition of a molecule to bind to some instance of a protein in a manner that 1) changes the realization of some function or role inhering in that protein, and 2) contributes to a decrease in blood pressure.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DRON_00005009 -->
+
+    <owl:Class rdf:about="&obo;DRON_00005009">
+        <rdfs:label xml:lang="en">anti-hypertensive non-activating competitive angiotensin receptor binding disposition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;DRON_00005008"/>
+        <obo:IAO_0000117>Caitrin McDonough Rowe</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">A function-altering anti-hypertensive disposition of a molecule to bind to an instance of an angiotensin subtype 1 (AT1) receptor in a manner that blocks the biological effects of angiotensin II (AngII).</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">Goodman &amp; Gilman’s The Pharmacological Basis of Therapeutics, 12th Edition, Chapter 26, Section Non-Peptide Angiotensin II Receptor Antagonists</obo:IAO_0000119>
+        <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">angiotensin II receptor antagonist</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DRON_00005010 -->
+
+    <owl:Class rdf:about="&obo;DRON_00005010">
+        <rdfs:label xml:lang="en">anti-hypertensive non-activating competitive beta-adrenergic receptor binding disposition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;DRON_00005008"/>
+        <obo:IAO_0000115 xml:lang="en">A function-altering anti-hypertensive disposition of a molecule to bind to an instance of a beta-adrenergic receptor in a manner that blocks sympathetic stimulation mediated by beta-adrenergic receptors in the heart and vascular smooth muscle.</obo:IAO_0000115>
+        <obo:IAO_0000117>Caitrin McDonough Rowe</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Goodman &amp; Gilman’s The Pharmacological Basis of Therapeutics, 12th Edition, Chapter 27, Section Sympatholythic Agents</obo:IAO_0000119>
+        <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">beta-adrenergic receptor blocker</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DRON_00005011 -->
+
+    <owl:Class rdf:about="&obo;DRON_00005011">
+        <rdfs:label xml:lang="en">anti-hypertensive function-inhibiting sodium-chloride cotransporter binding disposition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;DRON_00005008"/>
+        <obo:IAO_0000117>Caitrin McDonough Rowe</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">A function-altering anti-hypertensive disposition of a molecule to bind in the distal convoluted tubule in a manner that inhibits sodium-chloride transport.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">Goodman &amp; Gilman’s The Pharmacological Basis of Therapeutics, 12th Edition, Chapter 25, Section Inhibitors of Na+Cl- Symport (Thiazide and Thiazide-like Diuretics)</obo:IAO_0000119>
+        <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">thiazide diuretic</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">thiazide-like diuretic</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DRON_00005012 -->
+
+    <owl:Class rdf:about="&obo;DRON_00005012">
+        <rdfs:label xml:lang="en">anti-hypertensive function-inhibiting angiotensin-converting enzyme binding disposition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;DRON_00005008"/>
+        <obo:IAO_0000115 xml:lang="en">A function-altering anti-hypertensive disposition of a molecule to bind to an instance of an angiotensin-converting enzyme in a manner that inhibits the realization of a function of the enzyme instance.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">Goodman and Gilman&apos;s The Pharmacological Basis of Therapeutics, 12th Edition. Section III. Chapter 26 – Inhibitors of the Renin-Angiotensin System</obo:IAO_0000119>
+        <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
+        <obo:IAO_0000117>Caitrin McDonough Rowe</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">angiotensin-converting enzyme (ACE) inhibitor</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DRON_00005013 -->
+
+    <owl:Class rdf:about="&obo;DRON_00005013">
+        <rdfs:label xml:lang="en">anti-hypertensive function-inhibiting L-type voltage-gated calcium channel binding disposition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;DRON_00005008"/>
+        <obo:IAO_0000117>Caitrin McDonough Rowe</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">A function-altering anti-hypertensive disposition of a molecule to bind to an instance of a L-type calcium channel in a manner that inhibits the realization of a function of the calcium channel instance.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">Goodman and Gilman&apos;s The Pharmacological Basis of Therapeutics, 12th Edition. Section III. Chapter 27 – Ca2+ Channel Blockers</obo:IAO_0000119>
+        <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">calcium channel antagonist</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DRON_00005014 -->
+
+    <owl:Class rdf:about="&obo;DRON_00005014">
+        <rdfs:label xml:lang="en">anti-hypertensive function-inhibiting Na-K-Cl cotransporter 2 (NKCC2) binding disposition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;DRON_00005008"/>
+        <obo:IAO_0000115 xml:lang="en">A function-altering anti-hypertensive disposition of a molecule to bind to an instance of a Na-K-Cl cotransporter 2 (NKCC2) in a manner that inhibits the realization of a function of the cotransporter instance.</obo:IAO_0000115>
+        <obo:IAO_0000117>Caitrin McDonough Rowe</obo:IAO_0000117>
+        <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Goodman and Gilman&apos;s The Pharmacological Basis of Therapeutics, 12th Edition. Section III. Chapter 25 – Inhibitors of Na+-K+-2Cl- Symport (Loop Diuretics, High-Ceiling Diuretics)</obo:IAO_0000119>
+        <obo:IAO_0000118 xml:lang="en">loop diuretic</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DRON_00010855 -->
+
+    <rdf:Description rdf:about="&obo;DRON_00010855">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                        <owl:someValuesFrom rdf:resource="&obo;dronx/DRON_00005004"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                        <owl:onClass rdf:resource="&obo;DRON_00005008"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DRON_00010909 -->
+
+    <rdf:Description rdf:about="&obo;DRON_00010909">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                        <owl:someValuesFrom rdf:resource="&obo;DRON_00005000"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                        <owl:someValuesFrom rdf:resource="&obo;DRON_00005008"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DRON_00011132 -->
+
+    <rdf:Description rdf:about="&obo;DRON_00011132">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                        <owl:someValuesFrom rdf:resource="&obo;dronx/DRON_00005007"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                        <owl:onClass rdf:resource="&obo;DRON_00005008"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DRON_00015545 -->
+
+    <rdf:Description rdf:about="&obo;DRON_00015545">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                        <owl:someValuesFrom rdf:resource="&obo;DRON_00005000"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                        <owl:someValuesFrom rdf:resource="&obo;DRON_00005008"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DRON_00015550 -->
+
+    <rdf:Description rdf:about="&obo;DRON_00015550">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                        <owl:someValuesFrom rdf:resource="&obo;DRON_00005000"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                        <owl:someValuesFrom rdf:resource="&obo;DRON_00005008"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DRON_00015715 -->
+
+    <rdf:Description rdf:about="&obo;DRON_00015715">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                        <owl:someValuesFrom rdf:resource="&obo;dronx/DRON_00005007"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                        <owl:onClass rdf:resource="&obo;DRON_00005008"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DRON_00016077 -->
+
+    <rdf:Description rdf:about="&obo;DRON_00016077">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                        <owl:someValuesFrom rdf:resource="&obo;DRON_00005001"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                        <owl:onClass rdf:resource="&obo;DRON_00005008"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DRON_00017687 -->
+
+    <rdf:Description rdf:about="&obo;DRON_00017687">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                        <owl:someValuesFrom rdf:resource="&obo;dronx/DRON_00005004"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                        <owl:onClass rdf:resource="&obo;DRON_00005008"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DRON_00020021 -->
+
+    <rdf:Description rdf:about="&obo;DRON_00020021">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                        <owl:someValuesFrom rdf:resource="&obo;DRON_00005003"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                        <owl:onClass rdf:resource="&obo;DRON_00005008"/>
+                        <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DRON_00021716 -->
+
+    <rdf:Description rdf:about="&obo;DRON_00021716">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                <owl:someValuesFrom rdf:resource="&obo;DRON_00000034"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dronx/DRON_00005004 -->
+
+    <owl:Class rdf:about="&obo;dronx/DRON_00005004">
+        <rdfs:label xml:lang="en">anti-hypertensive function-activating alpha-2-adrenergic receptor disposition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;DRON_00005008"/>
+        <obo:IAO_0000115 xml:lang="en">A function-altering anti-hypertensive disposition of a molecule to bind to an instance of an alpha-2-adrenergice receptor in a manner that activates the receptor.</obo:IAO_0000115>
+        <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
+        <obo:IAO_0000117>Caitrin McDonough Rowe</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Goodman &amp; Gilman’s The Pharmacological Basis of Therapeutics, 12th Edition, Chapter 12, Alpha1-Selective Adrenergic Receptor Agonists</obo:IAO_0000119>
+        <obo:IAO_0000118 xml:lang="en">alpha-2-adrenergeic agonists</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dronx/DRON_00005005 -->
+
+    <owl:Class rdf:about="&obo;dronx/DRON_00005005">
+        <rdfs:label xml:lang="en">anti-hypertensive function-activating adenosine triphosphate-modulated potassium (ATP-modulated K+) channel disposition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;DRON_00005008"/>
+        <obo:IAO_0000115 xml:lang="en">A function-altering anti-hypertensive disposition of a molecule to bind to an instance of an adenosine triphosphate-modulated potassium (ATP-modulated K+) channel in a manner that opens the channel and permits potassium efflux.</obo:IAO_0000115>
+        <obo:IAO_0000117>Caitrin McDonough Rowe</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Goodman &amp; Gilman’s The Pharmacological Basis of Therapeutics, 12th Edition, Chapter 27, Vasodilators</obo:IAO_0000119>
+        <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">adenosine triphosphate-modulate potassium channel activator</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dronx/DRON_00005006 -->
+
+    <owl:Class rdf:about="&obo;dronx/DRON_00005006">
+        <rdfs:label xml:lang="en">anti-hypertensive function-inhibiting vesicular catecholamine transporter activity disposition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;DRON_00005008"/>
+        <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
+        <obo:IAO_0000117>Caitrin McDonough Rowe</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">A function-altering anti-hypertensive disposition of a molecule to bind to an instance of a vesicular catecholamine transporter in a manner that inhibits the transporter activity.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">Goodman &amp; Gilman’s The Pharmacological Basis of Therapeutics, 12th Edition, Chapter 27, Combined Alpha-1 and Beta Adrenergic Receptor Antagonists</obo:IAO_0000119>
+        <obo:IAO_0000118 xml:lang="en">Vesicular catecholamine transporter inhibitor</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/dronx/DRON_00005007 -->
+
+    <owl:Class rdf:about="&obo;dronx/DRON_00005007">
+        <rdfs:label xml:lang="en">anti-hypertensive function-activating imidazoline receptor subtype 1 disposition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;DRON_00005008"/>
+        <obo:IAO_0000115 xml:lang="en">A function-altering anti-hypertensive disposition of a molecule to bind to an instance of an imidazoline receptor subtype 1 (I1) in a manner that activates the receptor.</obo:IAO_0000115>
+        <obo:IAO_0000117>Caitrin McDonough Rowe</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">Imidazoline receptor subtype 1 agonist</obo:IAO_0000118>
+        <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">PubMed ID: 9050981 (Ernsberger P et al. The I1-imidazoline receptor: from binding to therapeutic target in cardiovascular disease. J Hypertens Suppl. 1997 Jan;15(1): S9-S23.)</obo:IAO_0000119>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+
